@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aquacare</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="popup">
+            <div class="popup__container">
+                <div class="popup__close">&times;</div>
+                <p class="popup__text">Только до 30 ноября! При заказе от 3 постов скидка 5% !!!</p>
+            </div>
+        </div>
+        <div class="form">
+            <div class="form__container">
+                <div class="form__close">&times;</div>
+                <h3 class="form__title">Заявка</h3>
+                <form action="send.php" method="POST" class="form__items" id="myForm">
+                    <input type="text" id="name" name="name" placeholder="Ваше имя" class="form__item" required>
+                    <input type="email" name="mail" placeholder="Адрес электронной почты" class="form__item">
+                    <input type="text" id="phone" name="phone" placeholder="Номер телефона" class="form__item" required>
+                    <label><input type="checkbox" name="accept" id="accept" class="form__checkbox" checked> Согласие на
+                        обработку персональных данных</label>
+                    <button type="submit" value="SEND" id="btn_submit" class="form__button">Отправить</button>
+                </form>
+
+            </div>
+            <div id="erconts"></div>
+        </div>
+        <header class="header">
+            <div class="header__container container">
+                <div class="logo__wrapper">
+                    <img src="img/logo.png" alt="logo" class="logo">
+                </div>
+                <div class="header__main">
+                    <span class="header__text">Оборудование для вашей автомойки!</span>
+                    <div class="header__links">
+                        <a href="#rent" class="header__link text">Аренда</a>
+                        <a href="#repair" class="header__link text">Ремонт</a>
+                        <a href="" class="header__link text">Комплектующие</a>
+                    </div>
+                </div>
+                <span class="header__action">Акция!!!<br>Жми!!!</span>
+                <div class="header__tel">
+                    <a href="tel: +7(999)123-25-25" class="header__number">8 (999) 123-25-25</a>
+                    <div class="header__buttons">
+                        <button class="header__button  _button" type="button">Заказать обратный звонок</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="rent">
+                <div class="rent__container container" id="rent">
+                    <div class="rent__left">
+                        <div class="rent_bold">
+                            <h6 class="rent__title">Аренда</h6>
+                            <span class="rent__line title">Аппаратов высокого давления<br> от 4000 рублей в месяц!
+                            </span>
+                        </div>
+                        <p class="rent__text">Включая установку, техническое обслуживание и ремонт!</p>
+                        <div class="rent__buttons">
+                            <button class="rent__button  _button" type="button">Заказать установку</button>
+                        </div>
+                    </div>
+                    <div class="rent__right">
+                        <img src="img/rentfon.jpg" alt="rent-image" class="rent__image">
+                    </div>
+                </div>
+            </section>
+
+            <section class="advantage">
+                <div class="advantage__container container">
+                    <div class="advantage__icon">
+                        <img src="img/advantagess.png" alt="advantage img" class="advantage__img">
+                    </div>
+                    <div class="advantage__row">
+                        <div class="advantage__column">
+                            <span class="advantage__title title">Минимальная цена</span>
+                            <span class="advantage__line text">Минимальная цена за аренду профессионального
+                                оборудования</span>
+                        </div>
+                        <div class="advantage__column">
+                            <span class="advantage__title title">Бесплатное сервисное обслуживание</span>
+                            <span class="advantage__line text">Мы своевременно проводим обслуживание установленного
+                                оборудования</span>
+                        </div>
+                        <div class="advantage__column">
+                            <span class="advantage__title title">Выезд мастера в течении 24 часов</span>
+                            <span class="advantage__line text">Оперативное реагирование на неисправности
+                                оборудования</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="repair">
+                <div class="repair__container container" id="repair">
+                    <div class="repair__text">
+                        <h6 class="repair__title title">Ремонт РВД, шлангов высокого давления</h6>
+                        <p class="repair__main text">
+                            При интенсивном режиме экплуатации, достаточно быстро изнашиваются детали и соединения,
+                            подтвергающиеся гидровлическому или механическому воздействию.
+                            Виды повреждений могут быть самые разные: от разрыва, истирания или растрескивания
+                            самих рукавов до выхода из строя концевых фитингов, штуцеров, ниппелей и прочей арматуры,
+                            с помощью которой РВД крепиться к рабочим узлам.<br>
+                            Компания <span class="repair__main_blue">
+                                AQUACARE</span> выполнит ремонт или произведет замену шлангов так же выполнит работы по
+                            наращиванию или уменьшению длины шланга.
+                        </p>
+                    </div>
+                    <div class="repair__icon">
+                        <img src="img/rvd.jpg" alt="RVD" class="repair__img">
+                    </div>
+                </div>
+            </section>
+
+            <section class='working'>
+                <div class="working__container container">
+                    <h6 class="working__title _title">Как мы <span class="working__title_red _red">работаем?</span></h6>
+                    <div class="working__items">
+                        <div class="working__item">
+                            <img src="img/click.png" alt="click" class="item__image">
+                            <h6 class="item__title">Звонок или заявка</h6>
+                            <p class="item__text">Вы звоните на по номеру <span class="working__tel">8 (888)
+                                    888 88
+                                    88 </span>или оставляете заявку на обратный звонок.</p>
+                        </div>
+                        <div class="working__item">
+                            <img src="img/telephone.png" alt="telefon" class="item__image">
+                            <h6 class="item__title">Звонок специалиста</h6>
+                            <p class="item__text">Наш специалиcт связывается с Вами и уточняет список
+                                необходимого
+                                оборудования. При необходимости осуществляется выезд на место установки.
+                            </p>
+                        </div>
+                        <div class="working__item">
+                            <img src="img/machine.png" alt="machine" class="item__image">
+                            <h6 class="item__title">Погрузка оборудования</h6>
+                            <p class="item__text">Мы собираем необходимую партию оборудования.</p>
+                        </div>
+                        <div class="working__item">
+                            <img src="img/delivery-truck.png" alt="delivery" class="item__image">
+                            <h6 class="item__title">Доставка</h6>
+                            <p class="item__text">Доставка на место установки в согласованное время.</p>
+                        </div>
+                        <div class="working__item">
+                            <img src="img/car-wash.png" alt="car wash" class="item__image">
+                            <h6 class="item__title">Установка оборудования</h6>
+                            <p class="item__text">Наши специалисты установят оборудование и проконсультируют
+                                Вас по
+                                его эксплуатации.</p>
+                        </div>
+                    </div>
+                    <div class="working__buttons">
+                        <button class="working__button  _button" type="button">Оставить заявку</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="reviews">
+                <div class="slider__container container">
+                    <span class="slider__title _title">Наши <span class="slider__title_red _red">отзывы</span></span>
+                    <div class="slider__wrapper">
+                        <div class="slide active">
+                            <!-- <img class="slid__img" src="img/slide4.jpg" alt=""> -->
+                            <div class="slide-text__wpapper">
+                                <h6 class="slide-text__title">Михаил - <span class="slide-text__title_red">собственник
+                                        3-х
+                                        постовой мойки</span></h6>
+                                <p class="slide__text">
+                                    Сотрудничаю с ккомпанией Aquacare уже 2-й год, в аренде у меня стоят 5 аппаратов. По
+                                    сервису нареканий нет никаких. Реагируют как в договоре - в течение 24 часов, но
+                                    чаще
+                                    всего – в день обращения. Работают быстро и качественно.
+                                </p>
+
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <!-- <img class="slid__img" src="img/slide5.jpg" alt=""> -->
+                            <div class="slide-text__wpapper">
+                                <h6 class="slide-text__title">Евгений - <span class="slide-text__title_red">совладелец
+                                        мойки самообслуживания</span></h6>
+                                <p class="slide__text">
+                                    Когда создвали мойку, было прянято решение обратиться в компанию Aquacare. Не
+                                    пожалели
+                                    ни разу, Нас проконсультировали по необходимому оборудованию и его установке. После
+                                    подписания договора все поставли и подключили в течении 2 дней!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <!-- <img class="slid__img" src="img/slide6.jpg" alt=""> -->
+                            <div class="slide-text__wpapper">
+                                <h6 class="slide-text__title">Владимир - <span class="slide-text__title_red">собственник
+                                        3-х постовой мойки</span></h6>
+                                <p class="slide__text">
+                                    Весной я начал расширяться. По рекомендации обратился в Aquacare. Все необходимое
+                                    оборудование поставили на следующий день, как и обещали. Планирую оснастить свою
+                                    следующую мойку их оборудованием.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="btn__prev">Prev</div>
+                        <div class="btn__next">Next</div>
+                    </div>
+                    <div class="dots__wrapper">
+                        <span class="dot active"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact">
+                <div class="contact__container container">
+                    <span class="contact__title _title">Наши <span
+                            class="contact__title_red _red">контакты</span></span>
+                    <div class="contact__main">
+                        <div class="contact__map">
+                            <script type="text/javascript" charset="utf-8" async
+                                src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae3e18124f47b5a757dfd353ac5ec98c802d0c7597a18c2a32dc28d4688c4110f&amp;width=100%25&amp;height=464&amp;lang=ru_RU&amp;scroll=true"></script>
+                        </div>
+                        <div class="contact__text">
+                            <p class="text__main">г. Москва Зорге 7<br>8 (999) 123-25-25<br>admin@aquacare.ru</p>
+                        </div>
+                    </div>
+                    <div class="contact__buttons">
+                        <button class="contact__button _button" type="button">Перезвонить мне</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__container container">
+                <div class="footer__column">
+                    <span class="footer__text">© Aquacare Group. All Rights Reserved 2020</span>
+                    <div class="footer__menu">
+                        <a href="privacy.html" class="footer__link">Политика конфиденциальности</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="js/script.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery.maskedinput.min.js"></script>
+        <script>
+            $(function () {
+                $("#phone").mask("8(999) 999-99-99");
+            });
+        </script>
+
+    </div>
+</body>
+
+</html>
