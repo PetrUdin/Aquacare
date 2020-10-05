@@ -126,8 +126,3 @@ form.addEventListener('submit', function (event) {
     request.send('name=' + encodeURIComponent(formData.name) + 'email=' + encodeURIComponent(formData.email) + 'phone=' + encodeURIComponent(formData.phone));
 });
 
-request.addEventListener('readystatechange', function () {
-    if (readeState == 4 && request.status == 200) {
-        console.log(request.responseText);
-    }
-});
